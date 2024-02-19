@@ -15,4 +15,5 @@ DLang.run('2 jama-ayla 3'); // Should print 5
 // Test print command
 DLang.run('knock_knock "Hello World"'); // Should print "Hello World"
 
-
+//5 isme-tera-ghata 3 = 2
+DLang.run('5 isme-tera-ghata 3');

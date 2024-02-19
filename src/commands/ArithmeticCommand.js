@@ -13,6 +13,8 @@ class ArithmeticCommand extends CommandInterface {
             case 'jama-ayla':
                 return console.log(Number(this.operand1) + Number(this.operand2));
             // Add cases for other arithmetic operations if needed
+            case 'isme-tera-ghata':
+                return console.log(Number(this.operand1) - Number(this.operand2));
             default:
                 throw new Error(`Unknown operator: ${this.operator}`);
         }

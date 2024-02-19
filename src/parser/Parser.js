@@ -7,7 +7,12 @@ class Parser {
             // Assuming format: [operand1, 'jama-ayla', operand2]
             const [operand1, , operand2] = tokens;
             return new ArithmeticCommand('jama-ayla', operand1, operand2);
-        } else if (tokens[0] === 'knock_knock') {
+        } if (tokens.includes('isme-tera-ghata')) {
+            // Assuming format: [operand1, 'jama-ayla', operand2]
+            const [operand1, , operand2] = tokens;
+            return new ArithmeticCommand('isme-tera-ghata', operand1, operand2);
+        }
+        else if (tokens[0] === 'knock_knock') {
             // It's a print command
             return new PrintCommand(tokens.slice(1).join(' '));
         } else {
